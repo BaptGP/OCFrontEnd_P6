@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <title>FishEye</title>
+    <title>Page d'accueil de FishEye</title>
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="header" role="banner">
             <a href="index.html"><div class="logo">
-                <svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-describedby="titre-logo desc-logo">
+                    <title id="titre-logo">Page d'accueil</title>
+                    <desc id="desc-logo">Le logo de FishEye</desc>
                     <path d="M24.7206 0.911377V6.51034H6.31164V17.578H21.4333V22.9166H6.31164V39.1926H0V0.911377H24.7206Z" fill="#911C1C"/>
                     <path d="M34.5826 1.04167C35.2401 1.69271 35.6346 2.60417 35.6346 3.64583C35.6346 4.6875 35.2401 5.46875 34.5826 6.11979C33.9252 6.77083 33.0047 7.16146 31.9528 7.16146C30.9008 7.16146 30.1119 6.77083 29.3229 6.11979C28.6655 5.46875 28.271 4.55729 28.271 3.64583C28.271 2.60417 28.6655 1.82292 29.3229 1.04167C29.9804 0.390625 30.9008 0 31.9528 0C33.0047 0 33.7937 0.390625 34.5826 1.04167ZM34.8456 11.1979V39.1927H28.9285V11.1979H34.8456Z" fill="#911C1C"/>
                     <path d="M43.261 36.9792C40.8941 35.2865 39.7107 32.9427 39.7107 29.9479H45.4964C45.6279 31.3802 46.2853 32.6823 47.6002 33.5937C48.9152 34.5052 50.4931 35.026 52.4655 35.026C54.3064 35.026 55.7528 34.6354 56.9362 33.9844C58.1196 33.3333 58.6456 32.4219 58.6456 31.25C58.6456 30.3385 58.3826 29.6875 57.8566 29.1667C57.3307 28.6458 56.6732 28.3854 55.7528 28.125C54.8323 27.8646 53.5174 27.7344 51.808 27.474H51.6765L50.8876 27.3438C48.6522 27.0833 46.6798 26.6927 45.2334 26.1719C43.787 25.651 42.472 24.8698 41.6831 23.8281C40.7626 22.7865 40.3682 21.4844 40.3682 19.6615C40.3682 17.9688 40.8941 16.4063 41.8146 15.1042C42.735 13.8021 44.1814 12.7604 45.8908 11.9792C47.6002 11.1979 49.5726 10.9375 51.808 10.9375C55.3583 10.9375 58.2511 11.7188 60.355 13.2812C62.5904 14.8438 63.7738 17.0573 63.9053 19.9219H58.1196C57.9881 18.6198 57.3307 17.5781 56.1472 16.7969C54.9638 16.0156 53.5174 15.4948 51.808 15.4948C50.0986 15.4948 48.6522 15.8854 47.7317 16.5365C46.6798 17.1875 46.1538 18.099 46.1538 19.2708C46.1538 20.0521 46.4168 20.7031 46.8113 21.0938C47.3373 21.4844 47.9947 21.7448 48.7837 22.0052C49.5726 22.1354 50.7561 22.3958 52.334 22.526C52.4655 22.526 52.4655 22.526 52.597 22.526C52.7284 22.526 52.7284 22.526 52.8599 22.526C55.3583 22.7865 57.3307 23.1771 59.0401 23.6979C60.618 24.2188 62.0644 25 62.9849 26.1719C64.0368 27.3438 64.5628 28.9062 64.5628 30.8594C64.5628 32.5521 64.0368 34.1146 62.9849 35.4167C61.9329 36.7188 60.4865 37.7604 58.6456 38.5417C56.8047 39.1927 54.8323 39.5833 52.4655 39.5833C48.6522 39.4531 45.6279 38.6719 43.261 36.9792Z" fill="#911C1C"/>
@@ -22,22 +24,21 @@
                 </svg>                  
             </div></a>
             <div class="tag">
-                <span class="tag-button">#Portrait</span>
-                <span class="tag-button">#Art</span>
-                <span class="tag-button">#Fashion</span>
-                <span class="tag-button">#Architecture</span>
-                <span class="tag-button">#Travel</span>
-                <span class="tag-button">#Sport</span>
-                <span class="tag-button">#Animals</span>
-                <span class="tag-button">#Events</span>
+                <a  href="#" class="tag-button" id="tag-portrait" onclick="filterTag('portrait')" role="button" title="filtre Portait">#Portrait</a>
+                <a  href="#" class="tag-button" id="tag-art" onclick="filterTag('art')" role="button" title="filtre Art">#Art</a>
+                <a  href="#" class="tag-button" id="tag-fashion" onclick="filterTag('fashion')" role="button" title="filtre Fashion">#Fashion</a>
+                <a  href="#" class="tag-button" id="tag-architecture" onclick="filterTag('architecture')" role="button" title="filtre Architecture">#Architecture</a>
+                <a  href="#" class="tag-button" id="tag-travel" onclick="filterTag('travel')" role="button" title="filtre Travel">#Travel</a>
+                <a  href="#" class="tag-button" id="tag-sport" onclick="filterTag('sport')" role="button" title="filtre Sport">#Sport</a>
+                <a  href="#" class="tag-button" id="tag-animals" onclick="filterTag('animals')" role="button" title="filtre Animals">#Animals</a>
+                <a  href="#" class="tag-button" id="tag-events" onclick="filterTag('events')" role="button" title="filtre Events">#Events</a>
             </div>
-            <span class="photographe">Nos photographes</span>
+            <h1 class="photographe">Nos photographes</h1>
         </div>
     </header>
-    <main id="main">
+    <main id="main" role="main">
 
     </main>
-    <script type="text/javascript" src="photographe.json"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

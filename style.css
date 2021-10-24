@@ -42,6 +42,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 /* FONTS */
 @font-face {
@@ -67,6 +71,7 @@ body{
     padding: 2px 5px;
     font-size: 12px;
     margin: 0.2rem;
+    cursor: pointer;
     
 }
 .tag{
@@ -138,8 +143,13 @@ main{
     width:150px;
     height:150px;
     object-fit: cover;
+    cursor: pointer;
 }
-
+/*TAG BUTTON*/
+.select{
+    background-color: #901C1C;
+    color: white;
+}
 
 /* Responsive */
 @media screen and (max-width:780px){
@@ -169,3 +179,5 @@ main{
         order: 2;
     }
 }
+
+
